@@ -1,0 +1,30 @@
+# Installation
+
+Environments:
+
+- Python 3.9
+- PyTorch 2.6.0
+- torchvision 0.21.0
+
+# Train
+
+Training on CIFAR-100
+
+- Fetch the pretrained teacher models by:
+    ```angular2html
+    sh fetch_pretrained_teachers.sh
+    ```
+  which will download and save the models to save/models
+
+- Run distillation by following commands in [teacher_resnet32x4.sh](teacher_resnet32x4.sh),[teacher_unpair.sh](teacher_unpair.sh),[teacher_vgg.sh](teacher_vgg.sh), and [teacher_wrn.sh](teacher_wrn.sh). An example of is given by
+  ```bash
+  python train_origin.py --cfg configs/cifar100/sdd_dkd/res32x4_shuv1.yaml --gpu 1 --M [1,2,4]
+  ```
+
+Training on CUB200
+- Download the pretrained teacher model in the cub200 folder in [baiduyun](https://pan.baidu.com/s/1uxyG3ZZO67i_dbXwuFB2yQ?pwd=bzc6)
+- Mv the 'cub200' folder into the 'save' folder
+- Run the command in train_cub_x.sh
+
+Core code
+- We provide the implement of CD-SD-KD ,CD-SD-DKD, and CD-SD-NKD in [KD.py](mdistiller%2Fdistillers%2FKD.py), [CD_SDD_DKD.py](mdistiller%2Fdistillers%2FSDD_DKD.py), and [CD_SDD_nkd.py](mdistiller%2Fdistillers%2FSDD_nkd.py)
