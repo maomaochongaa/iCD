@@ -27,7 +27,7 @@ Training on CUB200
 - Run the command in train_cub_x.sh
 
 Core code
-- We provide the implement of CD-SD-KD ,CD-SD-DKD, and CD-SD-NKD in [KD.py](mdistiller%2Fdistillers%2FKD.py), [CD_SDD_DKD.py](mdistiller/distillers/CD_SDD_DKD.py), and [CD_SDD_nkd.py](mdistiller%2Fdistillers%2FCD_SDD_nkd.py)
+- We provide the implement of CD-SD-KD ,CD-SD-DKD, and CD-SD-NKD in [KD.py](mdistiller/distillers/KD.py), [CD_SDD_DKD.py](mdistiller/distillers/CD_SDD_DKD.py), and [CD_SDD_nkd.py](mdistiller/distillers/CD_SDD_nkd.py)
 
 # Acknowledgement
 Thanks for CRD, DKD and SDD. We build this library based on the [CRD's codebase](https://github.com/HobbitLong/RepDistiller) and the [DKD's codebase](https://github.com/megvii-research/mdistiller) and the [SDD's codebase](https://github.com/shicaiwei123/SDD-CVPR2024).
