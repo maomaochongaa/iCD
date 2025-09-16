@@ -16,9 +16,9 @@ Training on CIFAR-100
     ```
   which will download and save the models to save/models
 
-- Run distillation by following commands in [teacher_resnet32x4.sh](teacher_resnet32x4.sh),[teacher_unpair.sh](teacher_unpair.sh),[teacher_vgg.sh](teacher_vgg.sh), and [teacher_wrn.sh](teacher_wrn.sh). An example of is given by
+- Run distillation by following commands in [train_cd_sdd_kd.sh](train_cd_sdd_kd),[train_cd_sdd_nkd.sh](train_cd_sdd_nkd) and [train_cd_sdd_dkd.sh](train_cd_sdd_dkd). An example of is given by
   ```bash
-  python train_origin.py --cfg configs/cifar100/sdd_dkd/res32x4_shuv1.yaml --gpu 1 --M [1,2,4]
+  python train_origin.py --cfg configs/cub200/cd_sdd_kd/res32x4_mv2.yaml --gpu 0 --M [1,2,4]
   ```
 
 Training on CUB200
@@ -27,7 +27,7 @@ Training on CUB200
 - Run the command in train_cub_x.sh
 
 Core code
-- We provide the implement of CD-SD-KD ,CD-SD-DKD, and CD-SD-NKD in [KD.py](mdistiller%2Fdistillers%2FKD.py), [CD_SDD_DKD.py](mdistiller%2Fdistillers%2FSDD_DKD.py), and [CD_SDD_nkd.py](mdistiller%2Fdistillers%2FSDD_nkd.py)
+- We provide the implement of CD-SD-KD ,CD-SD-DKD, and CD-SD-NKD in [KD.py](mdistiller%2Fdistillers%2FKD.py), [CD_SDD_DKD.py](mdistiller%2Fdistillers%2FCD_SDD_DKD.py), and [CD_SDD_nkd.py](mdistiller%2Fdistillers%2FCD_SDD_nkd.py)
 
 # Acknowledgement
 Thanks for CRD, DKD and SDD. We build this library based on the [CRD's codebase](https://github.com/HobbitLong/RepDistiller) and the [DKD's codebase](https://github.com/megvii-research/mdistiller) and the [SDD's codebase](https://github.com/shicaiwei123/SDD-CVPR2024).
