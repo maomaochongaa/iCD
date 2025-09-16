@@ -50,7 +50,7 @@ def cluster_loss(patch_student, patch_teacher, gamma, temperature=1):
         ps = patch_student[:, :, start:end]  # [B, C, group_size]
         pt = patch_teacher[:, :, start:end]  # [B, C, group_size]
 
-        # 计算相似度矩阵
+        # 计算 Gram 矩阵
         sim_s = torch.bmm(ps.transpose(1, 2), ps)  # [B, group_size, group_size]
         sim_t = torch.bmm(pt.transpose(1, 2), pt)  # [B, group_size, group_size]
 
