@@ -31,3 +31,15 @@ Core code
 
 # Acknowledgement
 Thanks for CRD, DKD and SDD. We build this library based on the [CRD's codebase](https://github.com/HobbitLong/RepDistiller) and the [DKD's codebase](https://github.com/megvii-research/mdistiller) and the [SDD's codebase](https://github.com/shicaiwei123/SDD-CVPR2024).
+
+# Citation
+If you find this project helpful for your research, please consider citing the following BibTeX entry.
+```
+@article{xue2025icd,
+  title   = {iCD: A Implicit Clustering Distillation Mathod for Structural Information Mining},
+  author  = {Xiang Xue and Yatu Ji and Qing-dao-er-ji Ren and Bao Shi and Min Lu and Nier Wu and Xufei Zhuang and Haiteng Xu and Gan-qi-qi-ge Cha},
+  journal = {arXiv preprint arXiv:2509.12553},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2509.12553}
+}
+```
