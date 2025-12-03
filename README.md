@@ -43,3 +43,7 @@ If you find this project helpful for your research, please consider citing the f
   url     = {https://arxiv.org/abs/2509.12553}
 }
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=maomaochongaa/iCD&type=date&legend=top-left)](https://www.star-history.com/#maomaochongaa/iCD&type=date&legend=top-left)
