@@ -1,3 +1,9 @@
+## 📰 News
+
+- **Dec 2025**: Selected for a Lightning Talk (Oral Presentation) 🎤  
+- **Oct 2025**: Accepted to the AAAI 2026 Student Abstract and Poster Program (SAPP) ✅
+
+
 # Installation
 
 Environments:
